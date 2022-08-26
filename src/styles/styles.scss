@@ -1,0 +1,9 @@
+@import './base/base';
+@import './base/variables';
+
+@import './utils/mixins';
+
+// COMPONENTS:
+@import '../components/buttons/styles';
+@import '../components/inputs/searchbar/styles';
+@import '../components/layout/navbar/styles';

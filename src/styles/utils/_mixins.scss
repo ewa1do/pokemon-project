@@ -1,0 +1,41 @@
+// MEDIA QUERY MANAGER
+// MOBILE FIRST APPROACH
+// small: 480px
+
+/*
+BREAKPOINTS: 
+md: 768px
+lg: 976px
+xl: 1440px
+*/
+
+$sm: 30em;
+$md: 48em;
+$lg: 61em;
+$xl: 90em;
+
+@mixin media($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: $md) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media (min-width: $lg) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == sm {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+}
