@@ -4,11 +4,16 @@ import {
   uiOpenModal,
 } from '../redux/actions/UIActions';
 
+import { clearSelectedPokemon } from '../redux/actions/eventActions';
+
 export const useModal = () => {
   const dispatch = useDispatch();
   const { isModalOpen } = useSelector((state) => state.UI);
 
+  const { selectedPokemon } = useSelector((state) => state.events);
+
   const closeModal = () => {
+    dispatch(clearSelectedPokemon());
     dispatch(uiCloseModal());
   };
 
@@ -16,5 +21,5 @@ export const useModal = () => {
     dispatch(uiOpenModal());
   };
 
-  return { isModalOpen, closeModal, openModal };
+  return { isModalOpen, selectedPokemon, closeModal, openModal };
 };
