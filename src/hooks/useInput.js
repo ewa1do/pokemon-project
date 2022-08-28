@@ -3,8 +3,6 @@ import { useState } from 'react';
 export const useInput = (initialState = {}) => {
   const [inputValue, setInputValue] = useState(initialState);
 
-  const reset = () => setInputValue(initialState);
-
   const handleInputChange = ({ target }) => {
     setInputValue({
       ...inputValue,
@@ -12,5 +10,9 @@ export const useInput = (initialState = {}) => {
     });
   };
 
-  return [inputValue, handleInputChange, reset];
+  const reset = (state = initialState) => {
+    setValues(state);
+  };
+
+  return [inputValue, setInputValue, handleInputChange, reset];
 };

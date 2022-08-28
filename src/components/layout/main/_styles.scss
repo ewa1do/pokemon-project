@@ -1,0 +1,95 @@
+.pokemons__container {
+  border-radius: 0.4rem;
+  box-shadow: 0 10px 20px #0000004a;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 43.4rem;
+
+  @include media(md) {
+    max-width: 60rem;
+  }
+
+  @include media(lg) {
+    max-width: 80rem;
+  }
+
+  .pokemons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header {
+      background-color: darken($color: $button-color, $amount: 20%);
+      padding: 1rem;
+      color: $white-color;
+      border-top-left-radius: 0.4rem;
+      border-top-right-radius: 0.4rem;
+
+      &--row {
+        th {
+          font-weight: 400;
+          min-width: 8.28rem;
+
+          @include media(md) {
+            min-width: 11.59rem;
+          }
+
+          @include media(lg) {
+            min-width: 15.59rem;
+          }
+        }
+      }
+    }
+
+    &__body {
+      &--row {
+        td {
+          min-width: 8.55rem;
+          text-align: center;
+
+          @include media(md) {
+            min-width: 11.99rem;
+          }
+
+          @include media(lg) {
+            min-width: 16rem;
+          }
+        }
+      }
+
+      .img > img {
+        width: 4rem;
+      }
+    }
+  }
+}
+
+.bg-gray {
+  background-color: lighten($color: $navbar-color, $amount: 25%);
+}
+
+.no-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+
+    @include media(md) {
+      font-size: 4rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+
+    @include media(md) {
+      font-size: 3rem;
+    }
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+}

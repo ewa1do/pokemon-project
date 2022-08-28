@@ -1,0 +1,57 @@
+.button-active {
+  background-color: $button-color;
+  padding: 1rem 1.5rem;
+  border: none;
+  color: $white-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: all 0.3s linear;
+
+  &:hover {
+    background-color: darken($color: $button-color, $amount: 10%);
+  }
+
+  i {
+    margin: 0 0.5rem;
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+}
+
+.action-button {
+  background: none;
+  border: 0;
+  color: lighten($color: $button-color, $amount: 10);
+  cursor: pointer;
+  transition: all 0.3s linear;
+  padding: 0 0.5rem;
+  outline: none;
+
+  &:hover {
+    color: $button-color;
+  }
+}
+
+.return-button {
+  border: 0;
+  background-color: $button-color;
+  color: $white-color;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: all 0.3s linear;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+
+  &:hover {
+    background-color: darken($color: $button-color, $amount: 10%);
+  }
+}

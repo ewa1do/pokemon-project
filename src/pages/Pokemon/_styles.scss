@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 4rem;
+    box-shadow: 0 10px 20px #0000004a;
+    border-radius: 0.4rem;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__img {
+      width: 20rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    &__footer {
+      margin-top: 6rem;
+      display: flex;
+      justify-content: space-between;
+
+      .stats {
+        display: flex;
+
+        hgroup {
+          display: flex;
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

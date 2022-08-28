@@ -1,9 +1,19 @@
+// UTILITIES
+@import './utils/mixins';
+@import './utils/animations';
+@import './utils/helpers';
+
 @import './base/base';
 @import './base/variables';
-
-@import './utils/mixins';
 
 // COMPONENTS:
 @import '../components/buttons/styles';
 @import '../components/inputs/searchbar/styles';
 @import '../components/layout/navbar/styles';
+@import '../components/UI/spinners/styles';
+@import '../components/layout/main/styles';
+@import '../components/UI/modals/styles';
+@import '../components/UI/overlay/styles';
+@import '../components/forms/styles';
+@import '../components/forms/selects/styles';
+@import '../pages/Pokemon/styles';

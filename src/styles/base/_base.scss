@@ -13,4 +13,37 @@
 body {
   font-size: 1.6rem;
   font-family: 'Montserrat', sans-serif;
+
+  @include media(lg) {
+    font-size: 2rem;
+  }
+
+  @include media(xl) {
+    font-size: 2.2rem;
+  }
+}
+
+input {
+  outline: none;
+}
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }

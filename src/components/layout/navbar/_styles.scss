@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1rem 5rem;
+    margin-bottom: 3rem;
+
+    @include media(md) {
+      justify-content: space-around;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 500;
+
+      @include media(md) {
+        font-size: 2.3rem;
+      }
+
+      @include media(lg) {
+        font-size: 3.2rem;
+      }
+    }
+
+    .logo {
+      height: 3rem;
+
+      @include media(md) {
+        height: 4rem;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-around;
+
+    @include media(lg) {
+      justify-content: space-evenly;
+    }
+  }
+}

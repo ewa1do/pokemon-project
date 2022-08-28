@@ -1,0 +1,15 @@
+.searchbar {
+  padding: 0.5rem 1.6rem;
+  border: 2px solid #ccc;
+  border-radius: 0.3rem;
+  width: 30rem;
+
+  @include media(md) {
+    width: 35rem;
+    margin-top: 2rem;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
