@@ -55,3 +55,11 @@
     background-color: darken($color: $button-color, $amount: 10%);
   }
 }
+
+.closing-tag-button {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  cursor: pointer;
+  font-size: 2.5rem;
+}

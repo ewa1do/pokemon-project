@@ -5,6 +5,7 @@ import { useInput } from '../../../hooks/useInput';
 import { FormComponent } from '../../forms/FormComponent';
 import { useModal } from '../../../hooks/useModal';
 import { initEvent } from '../../../utilities/initEvent';
+import { ButtonComponent } from '../../buttons/ButtonComponent';
 
 export const Modal = () => {
   const { isModalOpen, selectedPokemon, closeModal } = useModal();
@@ -26,12 +27,12 @@ export const Modal = () => {
 
   return (
     <div className={`modal relative ${isModalOpen || 'hidden'}`}>
-      <div
-        className='closing-tag'
+      <ButtonComponent
+        Icon={IoCloseCircleOutline}
+        className='closing-tag-button'
         onClick={handleCloseModal}
-      >
-        <IoCloseCircleOutline />
-      </div>
+      />
+
       <h3>{selectedPokemon ? 'Editar Pokemon' : 'Nuevo Pokemon'}</h3>
 
       <FormComponent
