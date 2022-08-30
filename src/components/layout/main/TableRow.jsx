@@ -39,22 +39,19 @@ export const TableRow = ({ props }) => {
       <td>{defense}</td>
       <td>
         <ButtonComponent
-          value=''
           Icon={MdOpenInFull}
           link={true}
-          id={id}
+          path={`/pokemon/${id}`}
           className='action-button'
         />
 
         <ButtonComponent
-          value=''
           Icon={MdModeEdit}
           onClick={handleEdition}
           className='action-button'
         />
 
         <ButtonComponent
-          value=''
           Icon={MdDelete}
           onClick={handleDeletePokemon}
           className='action-button'
