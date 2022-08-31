@@ -150,7 +150,6 @@ export const FormComponent = ({
 
         <ButtonComponent
           Icon={IoSaveOutline}
-          type='submit'
           value={`${!!selectedPokemon ? 'Actualizar' : 'Guardar'}`}
           className='button-active'
         />

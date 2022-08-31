@@ -25,7 +25,6 @@ export const Navbar = () => {
           value='Nuevo'
           Icon={FaPlus}
           onClick={openModal}
-          className='button-active'
         />
       </div>
     </div>
