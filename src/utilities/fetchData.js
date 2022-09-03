@@ -1,10 +1,11 @@
-const BASE_URL = process.env.VITE_BASE_URL;
-const ID_AUTHOR = process.env.VITE_ID_AUTHOR;
+const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
+const ID_AUTHOR = import.meta.env.VITE_APP_ID_AUTHOR;
 
 export const getAllDataFromApi = async (endpoint, id) => {
   const url = `${endpoint}?idAuthor=${id}`;
 
   const res = await fetch(url);
+
   const data = await res.json();
 
   return data;
