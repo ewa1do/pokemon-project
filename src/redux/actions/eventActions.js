@@ -4,8 +4,8 @@ import {
   getAllDataFromApi,
 } from '../../utilities/fetchData';
 
-const BASE_URL = process.env.VITE_BASE_URL;
-const ID_AUTHOR = process.env.VITE_ID_AUTHOR;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+const ID_AUTHOR = import.meta.env.VITE_ID_AUTHOR;
 
 export const startAddNewPokemon = (event) => {
   return async (dispatch) => {
